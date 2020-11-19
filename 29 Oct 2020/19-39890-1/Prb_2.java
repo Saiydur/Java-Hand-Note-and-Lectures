@@ -14,47 +14,47 @@ public class Prb_2 {
             if(amount>=1000)
             {
                 note1k=amount/1000;
-                amount=(amount/1000-note1k)*1000;
+                amount=amount-note1k*1000;
             }
-            else if(amount>=500)
+            if(amount>=500)
             {
                 note500=amount/500;
-                amount=(amount/500-note500)*500;
+                amount=amount-note500*500;
             }
-            else if(amount>=100)
+            if(amount>=100)
             {
                 note100=amount/100;
-                amount=(amount/100-note100)*100;
+                amount=amount-note100*100;
             }
-            else if(amount>=50)
+            if(amount>=50)
             {
                 note50=amount/50;
-                amount=(amount/50-note50)*50;
+                amount=amount-note50*50;
             }
-            else if(amount>=20)
+            if(amount>=20)
             {
                 note20=amount/50;
-                amount=(amount/50-note20)*20;
+                amount=amount-note20*20;
             }
-            else if(amount>=10)
+            if(amount>=10)
             {
                 note10=amount/10;
-                amount=(amount/10-note10)*10;
+                amount=amount-note10*10;
             }
-            else if(amount>=5)
+            if(amount>=5)
             {
                 note5=amount/5;
-                amount=(amount/5-note5)*5;
+                amount=amount-note5*5;
             }
-            else if(amount>=2)
+            if(amount>=2)
             {
                 note2=amount/2;
-                amount=(amount/2-note2)*2;
+                amount=amount-note2*2;
             }
             if(amount>=1)
             {
                 note1=amount/1;
-                amount=(amount/1-note1)*1;
+                amount=amount-note1*1;
             }
         }
 
