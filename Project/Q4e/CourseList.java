@@ -1,6 +1,6 @@
 public class CourseList {
-    private String[] courseList = new String[500];
-    private Courses course;
+    private Course[] courseList = new Course[500];
+    
     
     public void setCourseList(String[] courseList) {
         this.courseList = courseList;
