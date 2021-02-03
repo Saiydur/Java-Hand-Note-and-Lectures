@@ -59,18 +59,21 @@ public class Account {
     }
 
     //Transfer Amount To Another Account
-    Account transfer(int amount,Account reciver)
+    public void transfer(Account reciver,int amount)
     {
-        if(balance>amount)
+        if(amount>0 && amount<=balance)
         {
-            balance-=amount;
+            System.out.println("Previous Balance:"+this.balance);
+            System.out.println("Transfer Amount:"+amount);
+            this.balance-=amount;
             reciver.balance+=amount;
+            System.out.println("Current Balance:"+this.balance);
+
         }
         else
         {
-            System.out.println("Insufficient Balance");
+            System.out.println("Can Not Transfer");
         }
-        return reciver;
     }
 
     //display information

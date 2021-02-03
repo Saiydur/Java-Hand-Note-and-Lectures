@@ -17,7 +17,7 @@ public class Start {
         ac1.setAccId(accId);
         ac1.deposite(100000);
         ac1.display();
-        ac1.transfer(50000, ac2);
+        ac1.transfer(ac2, 5000);
         ac1.display();
         ac2.display();
 
